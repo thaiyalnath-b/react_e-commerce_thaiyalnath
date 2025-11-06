@@ -7,7 +7,7 @@ const fake_products = [
             id: 1,
             title: 'Puma',
             img_src: "shoe1.jpg",
-            price: 1800
+            price: 2200
         },
         {
             id: 2,
@@ -19,7 +19,7 @@ const fake_products = [
             id: 3,
             title: 'Addidas',
             img_src: "Addidas.jpg",
-            price: 1800
+            price: 2500
         },
         {
             id: 4,
@@ -31,12 +31,13 @@ const fake_products = [
             id: 5,
             title: 'White',
             img_src: "shoe2.jpg",
-            price: 2500
+            price: 1600
         }
 ]
 
 
 const Home = () => {
+    document.title="E-Shop";
     return (
         <>
             <Carousel />

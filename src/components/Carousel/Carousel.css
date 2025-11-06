@@ -1,3 +1,8 @@
 #carouselExample{
-    margin: 0px;
+    margin-top: 56px;
+}
+.carousel-item {
+    img{
+        aspect-ratio: 16/4;
+    }
 }

@@ -8,7 +8,6 @@ const App = () => {
       <header>
         <Navbar />
       </header>
-
       <main className="container-fluid p-0">
         <Outlet />
       </main>
