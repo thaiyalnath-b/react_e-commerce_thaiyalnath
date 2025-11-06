@@ -2,6 +2,8 @@ import React from "react";
 import { useLocation, Link, useParams } from "react-router-dom";
 import { useCurrency } from "../context/CurrencyContext";
 
+
+
 const img_server_path = '/images/ProductCards/'
 
 const ProductDetails = () => {
