@@ -13,6 +13,7 @@ export const useCurrency = () => useContext(CurrencyContext);
 // This will wrap the App in main.jsx, thus providing the context of
 // currency to all the children from the top most component,
 // making it accessible to all components if required.
+
 export const CurrencyProvider = ({ children }) => {
 
     // creating new states for managing conversions across the website.
