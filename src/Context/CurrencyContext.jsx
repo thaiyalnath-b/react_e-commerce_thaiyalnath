@@ -1,6 +1,7 @@
 import React, { createContext, useEffect, useContext, useState } from "react";
 import axios from "axios";
 
+
 // Creating a new context
 const CurrencyContext = createContext();
 
@@ -34,7 +35,7 @@ export const CurrencyProvider = ({ children }) => {
 
                 // If data is retrieved and the `rates` dictionary is present
                 if (res.data && res.data.rates) {
-                    // setting the state of `rates` 💸
+                    // setting the state of `rates` 
                     setRates(res.data.rates);
                 }
                 else {
