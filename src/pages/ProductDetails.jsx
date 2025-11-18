@@ -1,6 +1,7 @@
 import React from "react";
-import { useLocation, Link, useParams } from "react-router-dom";
+import { useLocation, Link, useParams, Navigate, useOutletContext, useNavigate } from "react-router-dom";
 import { useCurrency } from "../context/CurrencyContext";
+import "./ProductDetails.css"
 
 
 
@@ -10,6 +11,9 @@ const ProductDetails = () => {
     const { state } = useLocation();
     const { id } = useParams();
     const { convertPrice, getSymbol, loading } = useCurrency();
+
+    const {addToCart} = useOutletContext();
+    const navigate = useNavigate();
 
     // Try to read from state (from Home)
     const product = state?.product;
@@ -27,8 +31,13 @@ const ProductDetails = () => {
 
     const convertedPrice = convertPrice(product.price);
     document.title = `${product.title}`;
+
+    const handleAddToCart =(qty=1) => {
+        addToCart(product, qty);
+        navigate("/cart");
+    }
     return (
-        <div className="container my-5">
+        <div className="container">
             <div className="row align-items-center">
                 <div className="col-md-6 text-center">
                     <img src={`${img_server_path}${product.img_src}`} alt={product.title} className="img-fluid rounded shadow-sm" />
@@ -48,7 +57,7 @@ const ProductDetails = () => {
 
                     <p className="text-secondary small">(Base: ${product.price} USD)</p>
 
-                    <button className="btn btn-success me-3">Add to Cart</button>
+                    <button className="btn btn-success me-3" onClick={handleAddToCart}>Add to Cart</button>
                     <Link to="/" className="btn btn-outline-secondary">Back</Link>
                 </div>
             </div>

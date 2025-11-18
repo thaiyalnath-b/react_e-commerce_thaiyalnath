@@ -1,0 +1,28 @@
+.emp {
+    margin:  25% 0;
+    height: 100vh;
+}
+
+.tit {
+    color: rgb(219, 0, 0);
+    font-size: 2.5em;
+}
+
+.cot {
+    width: 60%;
+    margin: auto;
+}
+
+.li {
+    border: 1px solid rgb(186, 186, 186);
+    padding: 2%;
+}
+.more {
+    width: 200px;
+    margin: auto;
+}
+.qty {
+    border:  1px solid grey;
+    border-radius: 5px;
+    width: 95px;
+}

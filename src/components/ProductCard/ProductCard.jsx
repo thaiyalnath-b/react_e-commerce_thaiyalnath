@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { useCurrency } from "../../context/CurrencyContext";
 import './ProductCard.css';
 
@@ -8,8 +8,7 @@ import './ProductCard.css';
 
 const img_server_path = "/images/ProductCards/";
 
-
-const ProductCard = ({ product }) => {
+const ProductCard = ({ product, addToCart }) => {
 
     // Utilizing the context in the Product Card component.
     // convertPrice function gets the context of currency
@@ -18,6 +17,15 @@ const ProductCard = ({ product }) => {
 
     // Using convertPrice() to calculate converted price of individual product.
     const converted = convertPrice(product.price);
+    
+    const navigate = useNavigate();
+
+    const handleAddToCart = (e) => {
+        e.preventDefault();
+        addToCart(product, 1);
+        navigate("/cart");
+    };
+
     return (
         <div className="col-12 col-sm-6 col-md-4 col-lg-3">
             <div className="card h-100">
@@ -35,7 +43,7 @@ const ProductCard = ({ product }) => {
                             <p className="card-text text-muted">Loading currency...</p>
                         ) : (
                             <>
-                                <p card-text mb-1 fw-bold>
+                                <p className="card-text mb-1 fw-bold">
                                     {getSymbol()}{converted}
                                     {/* getSymbol retrieves currency symbol */}
                                     {/* converted shows converted currency after calculation */}
@@ -48,7 +56,7 @@ const ProductCard = ({ product }) => {
                     </div>
                 </Link>
                 <div className="card-footer bg-transparent border-0">
-                    <button className="btn btn-primary w-100">
+                    <button className="btn btn-primary w-100" onClick={handleAddToCart}>
                         {/* dysfunctional */}
                         Add to Cart
                     </button>

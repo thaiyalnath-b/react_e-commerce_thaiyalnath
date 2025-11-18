@@ -1,6 +1,10 @@
-const About = ()=>{
-    document.title="About";
-    return <h1>This is About Page</h1>;
-};
+import React from 'react'
 
-export default About;
+function About() {
+    document.title = "About";
+  return (
+    <div>About</div>
+  )
+}
+
+export default About

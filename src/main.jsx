@@ -15,6 +15,7 @@ import './index.css';
 import { CurrencyProvider } from './context/CurrencyContext.jsx';
 
 import ErrorBoundary from './components/ErrorBoundary/ErrorBoundary.jsx';
+import Cart from './pages/Cart.jsx';
 
 const router = createBrowserRouter([
   {
@@ -25,6 +26,7 @@ const router = createBrowserRouter([
       { path: "about", element: <About /> },
       { path: "contact", element: <Contact /> },
       { path: "product/:id", element: <ProductDetails /> },
+      { path: "/cart", element: <Cart /> }
     ],
   },
 ])

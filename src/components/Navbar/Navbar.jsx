@@ -3,7 +3,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { useCurrency } from "../../context/CurrencyContext"; // use custom hook
 
-const Navbar = () => {
+const Navbar = ({ cartCount = 0 }) => {
     const { currency, setCurrency, loading } = useCurrency();
 
     return (
@@ -11,7 +11,7 @@ const Navbar = () => {
             <div className="container-fluid">
 
                 {/* Brand */}
-                <Link className="navbar-brand" to="/">E-Shop</Link>
+                <Link className="navbar-brand" to="/">ShoeSea</Link>
 
                 {/* Mobile Toggler */}
                 <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -23,10 +23,11 @@ const Navbar = () => {
                     {/* Left side links */}
                     <ul className="navbar-nav me-auto mb-2 mb-lg-0">
                         <li className="nav-item">
-                            <Link className="nav-link active" aria-current="page" to="/">Home</Link>
+                            <Link className="nav-link" aria-current="page" to="/">Home</Link>
                         </li>
                         <li className="nav-item"><Link className="nav-link" to="/about">About</Link></li>
                         <li className="nav-item"><Link className="nav-link" to="/contact">Contact</Link></li>
+                        <li className="nav-item"><Link className="nav-link" to="/cart">Cart ({cartCount})</Link></li>
                     </ul>
 
                     {/* Search Bar */}
