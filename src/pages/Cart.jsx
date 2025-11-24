@@ -39,7 +39,7 @@ function Cart() {
       {cart.length === 0 ? (
         <div className='text-center emp'>
           <p>Your Cart is Empty</p>
-          <Link to="/" className="btn btn-outline-secondary ">Add Item</Link>
+          <Link to="/" className="btn btcl">Add Item</Link>
         </div>
 
       ) : (

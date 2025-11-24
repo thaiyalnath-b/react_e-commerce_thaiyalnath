@@ -7,11 +7,11 @@ const Navbar = ({ cartCount = 0 }) => {
     const { currency, setCurrency, loading } = useCurrency();
 
     return (
-        <nav className="navbar navbar-expand-lg bg-dark fixed-top" data-bs-theme="dark">
+        <nav className="navbar navbar-expand-lg bg-light fixed-top" data-bs-theme="light">
             <div className="container-fluid">
 
                 {/* Brand */}
-                <Link className="navbar-brand" to="/">ShoeSea</Link>
+                <Link className="navbar-brand" to="/"><b><i>FlashCart</i></b></Link>
 
                 {/* Mobile Toggler */}
                 <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -33,11 +33,11 @@ const Navbar = ({ cartCount = 0 }) => {
                     {/* Search Bar */}
                     <form className="d-flex me-3" role="search">
                         <input className="form-control me-2" type="search" placeholder="Search Products" aria-label="Search" />
-                        <button className="btn btn-outline-success" type="submit">Search</button>
+                        <button className="btn btcl" type="submit">Search</button>
                     </form>
 
                     {/* Currency Selector */}
-                    <div className="d-flex align-items-center text-light">
+                    <div className="d-flex align-items-center">
                         <label htmlFor="currencySelect" className="me-2 small mb-0">Currency:</label>
                         {loading ? (
                             <span className="text-light small">Loading...</span>
@@ -45,7 +45,7 @@ const Navbar = ({ cartCount = 0 }) => {
                             <select id="currencySelect" value={currency} 
                             // event handler:. onChange -> using to set state of currency
                             onChange={(e) => setCurrency(e.target.value)}
-                                className="form-select form-select-sm bg-dark text-light border-light w-auto mt-2"
+                                className="form-select form-select-sm border-light w-auto mt-2 cur"
                                 aria-label="Cureency selector">
 
                                 {/* Using mapping to build dynamic selection list for currency */}

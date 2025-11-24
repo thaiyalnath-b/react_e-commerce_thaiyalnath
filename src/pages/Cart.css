@@ -26,3 +26,13 @@
     border-radius: 5px;
     width: 95px;
 }
+
+.btcl {
+        background-color: rgb(255, 0, 162);
+        color: white;
+    }
+
+    .btcl:hover {
+        background-color: rgb(239, 49, 169);
+        color: white;
+    }

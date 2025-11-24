@@ -57,8 +57,8 @@ const ProductDetails = () => {
 
                     <p className="text-secondary small">(Base: ${product.price} USD)</p>
 
-                    <button className="btn btn-success me-3" onClick={handleAddToCart}>Add to Cart</button>
-                    <Link to="/" className="btn btn-outline-secondary">Back</Link>
+                    <button className="btn btcl me-3" onClick={handleAddToCart}>Add to Cart</button>
+                    <Link to="/" className="btn btbc">Back</Link>
                 </div>
             </div>
         </div>

@@ -1,8 +1,20 @@
-.navbar{
-    .navbar-brand{
-        color: aqua;
+.navbar {
+    .navbar-brand {
+        color: rgb(255, 0, 128);
     }
-    .nav-link{
-        color: burlywood;
+
+    .navbar-brand:hover {
+        color: rgb(255, 0, 174);
+    }
+
+    .nav-link {
+        color: rgb(2, 184, 147);
+    }
+    .nav-link:hover {
+         color: rgb(1, 238, 191);
+    }
+    .cur {
+        background-color: rgba(3, 76, 116, 0.414);
+        color: white;
     }
 }

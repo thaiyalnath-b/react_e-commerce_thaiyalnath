@@ -56,7 +56,7 @@ const ProductCard = ({ product, addToCart }) => {
                     </div>
                 </Link>
                 <div className="card-footer bg-transparent border-0">
-                    <button className="btn btn-primary w-100" onClick={handleAddToCart}>
+                    <button className="btn w-100 btcl" onClick={handleAddToCart}>
                         {/* dysfunctional */}
                         Add to Cart
                     </button>
