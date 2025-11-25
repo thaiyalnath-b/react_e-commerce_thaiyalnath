@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Outlet, Link, useOutletContext } from "react-router-dom";
 import Navbar from "./components/Navbar/Navbar";
+import Footer from "./components/Footer/Footer";
 
 const LOCALSTORAGE = "Shoesea";
 
@@ -78,7 +79,9 @@ const App = () => {
         <Outlet context={{ cart, addToCart, updateQuantity, setQuantity, removeFromCart, clearCart }} />
       </main>
 
-      <footer></footer>
+      <footer>
+        <Footer />
+      </footer>
     </>
   );
 }

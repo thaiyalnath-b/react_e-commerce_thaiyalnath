@@ -1,6 +1,7 @@
 .card {
     text-align: center;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    transition: 0.3s ease-in-out;
 
     img {
         height: 230px;
@@ -13,7 +14,11 @@
     }
 
     .btcl:hover {
-        background-color: rgb(239, 49, 169);
+        background-color: rgb(235, 20, 124);
         color: white;
     }
+}
+
+.card:hover {
+    transform: scale(1.02);
 }
