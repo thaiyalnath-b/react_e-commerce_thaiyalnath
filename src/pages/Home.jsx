@@ -39,7 +39,7 @@ const fake_products = [
 
 
 const Home = () => {
-    document.title = "E-Shop";
+    document.title = "FlashCart";
 
     const { addToCart } = useOutletContext();
     return (

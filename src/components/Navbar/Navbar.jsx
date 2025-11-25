@@ -7,7 +7,7 @@ const Navbar = ({ cartCount = 0 }) => {
     const { currency, setCurrency, loading } = useCurrency();
 
     return (
-        <nav className="navbar navbar-expand-lg bg-light fixed-top" data-bs-theme="light">
+        <nav className="navbar navbar-expand-lg fixed-top">
             <div className="container-fluid">
 
                 {/* Brand */}
