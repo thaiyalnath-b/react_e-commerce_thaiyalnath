@@ -7,9 +7,8 @@ function Footer() {
             {/* Footer */}
             <div className="container-fluid">
                 {/* Website Links */}
-                <div className="row ">
-
-                    <div className="col">
+                <div className="row ms-5">
+                    <div className="col ms-5 ps-5">
                         <span>
                             <img src="/flashCart.ico" alt="" width="30px" />
                         </span>
@@ -30,14 +29,6 @@ function Footer() {
                         <a href="#">Collections</a>
                         <a href="#">Accessories</a>
                         <a href="#">Shoes</a>
-                    </div>
-
-                    <div className="col">
-                        <span>POPULAR</span>
-                        <a href="#">Seasonal Favorites</a>
-                        <a href="#">Must Have Bags</a>
-                        <a href="#">Cozy Knitwear</a>
-                        <a href="#">Trendy Accessories</a>
                     </div>
 
                     <div className="col">
