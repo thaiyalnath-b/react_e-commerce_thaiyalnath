@@ -75,7 +75,7 @@ const App = () => {
       <header>
         <Navbar cartCount={cartCount} />
       </header>
-      <main className="container-fluid p-0">
+      <main className="container-fluid p-0 m-0">
         <Outlet context={{ cart, addToCart, updateQuantity, setQuantity, removeFromCart, clearCart }} />
       </main>
 

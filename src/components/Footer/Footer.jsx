@@ -7,7 +7,7 @@ function Footer() {
             {/* Footer */}
             <div className="container-fluid">
                 {/* Website Links */}
-                <div className="row ms-5">
+                <div className="row">
                     <div className="col ms-5 ps-5">
                         <span>
                             <img src="/flashCart.ico" alt="" width="30px" />
