@@ -16,6 +16,12 @@ const Carousel = () => {
         <div className="carousel-item">
           <img src="/images/Carousel/fin2.avif" className="d-block w-100" alt="..." />
         </div>
+        <div className="carousel-item">
+          <img src="/images/Carousel/fin5.webp" className="d-block w-100" alt="..." />
+        </div>
+        <div className="carousel-item">
+          <img src="/images/Carousel/fin6.webp" className="d-block w-100" alt="..." />
+        </div>
       </div>
       <button className="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
         <span className="carousel-control-prev-icon" aria-hidden="true"></span>
