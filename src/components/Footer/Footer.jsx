@@ -9,16 +9,15 @@ function Footer() {
                 {/* Website Links */}
                 <div className="row">
                     <div className="col ms-5 ps-5">
-                        <span>
-                            <img src="/flashCart.ico" alt="" width="30px" />
-                        </span>
                         <p
                             style={{
                                 fontSize: "14px",
                                 fontWeight: "700",
                                 fontFamily: "'Times New Roman', Times, serif",
                             }}
-                        >
+                        ><span className='me-2'>
+                                <img src="/sollu.ico" alt="" width="30px" />
+                            </span>
                             Shop in a Flash, Save in a Dash.
                         </p>
                     </div>

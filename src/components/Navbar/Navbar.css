@@ -9,13 +9,17 @@
     }
 
     .nav-link {
-        color: rgb(2, 184, 147);
+        color: rgb(189, 1, 129);
+        width: fit-content;
     }
     .nav-link:hover {
-         color: rgb(1, 238, 191);
+         color: rgb(244, 56, 213);
     }
     .cur {
         background-color: rgba(3, 76, 116, 0.414);
         color: white;
+    }
+    .cur:hover {
+        box-shadow: 1px 1px 3px 1px grey, -1px -1px 3px 1px grey;
     }
 }
