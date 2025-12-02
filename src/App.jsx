@@ -7,7 +7,6 @@ const LOCALSTORAGE = "Shoesea";
 
 const App = () => {
   
-
   const [cart, setCart] = useState(() => {
 
 

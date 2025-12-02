@@ -24,11 +24,8 @@ const fake_products = [
     { id: 17, title: "New Balance LiteRide", img_src: "17.avif", price: 82 },
 ];
 
-
-
 const Home = () => {
     document.title = "FlashCart";
-
     const { addToCart } = useOutletContext();
     return (
         <>
